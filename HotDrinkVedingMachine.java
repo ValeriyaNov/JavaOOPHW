@@ -1,18 +1,13 @@
 package Seminar1;
-
+//import Drink;
+//import HotDrink;
 import java.util.ArrayList;
 
-public class HotDrinkVedingMachine extends WendingMachine{
-    private ArrayList<Product> lst;
+public class HotDrinkVedingMachine extends WendingMachine<HotDrink>{
 
-    public HotDrinkVedingMachine(ArrayList<Product> lst) {
-        super(lst);
-        this.lst = lst;
-        
-    }
 
-    public HotDrink getProduct(String name, int volume, int temperature){
-        for (Product product : lst){
+    public HotDrink getProduct (String name, int volume, int temperature){
+        for (Product product : goods){
         if (product instanceof HotDrink){ 
             HotDrink ht = (HotDrink) product;
 

@@ -3,7 +3,7 @@ package Seminar1;
 public class HotDrink extends Drink{
     protected int temperature;
 
-    public HotDrink(String name, int price, int volume, int temperature) {
+    public HotDrink(String  name, int price, int volume, int temperature) {
         super(name, price);
         this.volume = volume;
         this.temperature = temperature;

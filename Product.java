@@ -13,7 +13,7 @@ public class Product {
     public String getName(){
         return this.name;
     }
-    public Integer getPrice(){
+    public int getPrice(){
         return this.price;
     }
     public void setName(String name){
